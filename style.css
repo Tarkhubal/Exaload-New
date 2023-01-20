@@ -17,9 +17,10 @@ body {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background: linear-gradient(red, purple, blue);
+    background: #222;
     animation: animate 1.2s linear infinite;
     transition: all 0.5s ease-in-out;
+    z-index: 999;
 }
 
 @keyframes animate {
@@ -65,4 +66,37 @@ body {
     background-color: #222;
     border: solid #222 10px;
     border-radius: 50%;
+}
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
 }
