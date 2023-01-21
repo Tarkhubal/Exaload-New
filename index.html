@@ -1,31 +1,54 @@
+<!DOCTYPE html>
 <html>
 
-<link rel="stylesheet" href="style.css">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+</head>
 
-<div id="loader">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
+<body>
+    <div id="loaderbg"></div>
+    <div id="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-<!-- <div id="container">
-    <span id="text1"></span>
-    <span id="text2"></span>
-</div>
+    <section id="nav">
+        <div id="nav-deco"></div>
+        <nav id="nav-left">
+            <div id="navl1" class="navblock"></div>
+            <div id="navl2" class="navblock"></div>
+            <div id="navl3" class="navblock"></div>
+        </nav>
+        <nav id="nav-right">
+            <div id="navr1" class="navblock"></div>
+            <div id="navr2" class="navblock"></div>
+            <div id="navr3" class="navblock"></div>
+        </nav>
+    </section>
 
-<svg id="filters">
-    <defs>
-        <filter id="threshold">
-            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
-									0 1 0 0 0
-									0 0 1 0 0
-									0 0 0 255 -140" />
-        </filter>
-    </defs>
-</svg> -->
+    <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
+    <div class="home-content">
+        <h2>eigoboie</h2>
+    </div>
 
-<script src="loader.js"></script>
-<script src="textanimation.js"></script>
+</body>
+
+<footer>
+    <script src="loader.js"></script>
+    <script src="textanimation.js"></script>
+</footer>
 
 </html>

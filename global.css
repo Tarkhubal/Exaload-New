@@ -1,0 +1,154 @@
+html {
+    background-color: #222;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#loader {
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #222;
+    animation: animate 1.2s linear infinite;
+    transition: all 0.5s ease-in-out;
+    z-index: 999;
+}
+
+#loaderbg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    z-index: 998;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(red, purple, blue);
+}
+
+#loader span:nth-child(1) {
+    filter: blur(5px);
+}
+
+#loader span:nth-child(2) {
+    filter: blur(10px);
+}
+
+#loader span:nth-child(3) {
+    filter: blur(25px);
+}
+
+#loader span:nth-child(4) {
+    filter: blur(50px);
+}
+
+#loader:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #222;
+    border: solid #222 10px;
+    border-radius: 50%;
+}
+
+#nav {
+    position: fixed;
+    z-index: 997;
+    top: 0;
+    color: white;
+}
+
+#nav #nav-deco {
+    width: 100vw;
+    height: 50px;
+    background-color: #000;
+    border-radius: 10px 10px 0 0;
+}
+
+#nav #nav-left,
+#nav #nav-right {
+    width: 30vw;
+    height: 90px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #111;
+}
+
+#nav #nav-left {
+    left: 0;
+    border-radius: 0 0 50px 10px;
+}
+
+#nav #nav-right {
+    right: 0;
+    border-radius: 0 0 10px 50px;
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    /* Scrollbars */
+    width: 14px;
+    height: 14px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Barre */
+    border: solid 0 transparent;
+    border-right-width: 4px;
+    -webkit-border-radius: 5px;
+    -webkit-border-top-right-radius: 9px 5px;
+    -webkit-border-bottom-right-radius: 9px 5px;
+    -webkit-box-shadow: inset 0 0 0 1px #aaa, inset 0 0 0 6px #eee;
+}
+
+::-webkit-scrollbar-corner {
+    /* Coin de la fenêtre */
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* Barre quand survolée */
+    -webkit-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+    -webkit-box-shadow: inset 0 0 0 1px #555,
+        inset 0 0 0 6px #666;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    /* Barre du bas */
+    border-right-width: 0;
+    border-bottom-width: 4px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px 9px;
+    -webkit-border-bottom-left-radius: 5px 9px;
+}
