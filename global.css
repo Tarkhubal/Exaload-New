@@ -74,6 +74,41 @@ body {
     border-radius: 50%;
 }
 
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,100);
+@import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800);
+@import url(https://fonts.googleapis.com/css?family=Raleway:900);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:wght@100);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@300);
+@import url(https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;700);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500);
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900);
+@font-face {
+    font-family: LemonMilk;
+    src: url(https://cdn.glitch.global/1f61965e-15d8-4de3-8f2d-15723c6634d9/LemonMilkLight.ttf?v=1662220441168);
+}
+
+@font-face {
+    font-family: AstroSpace;
+    src: url(https://cdn.glitch.global/1f61965e-15d8-4de3-8f2d-15723c6634d9/AstroSpace-eZ2Bg.ttf?v=1665749687931)
+}
+
+@font-face {
+    font-family: HeyOctober;
+    src: url(https://cdn.glitch.global/1f61965e-15d8-4de3-8f2d-15723c6634d9/HeyOctober-Yz37y.ttf?v=1665749845879)
+}
+
+@font-face {
+    font-family: Geffry;
+    src: url(https://cdn.glitch.global/1f61965e-15d8-4de3-8f2d-15723c6634d9/GeffryRegular-MV5Jx.ttf?v=1665750040529)
+}
+
+
 #nav {
     position: fixed;
     z-index: 997;
@@ -84,8 +119,18 @@ body {
 #nav #nav-deco {
     width: 100vw;
     height: 50px;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px 10px 0 0;
+}
+
+#nav #nav-deco h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 45px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    user-select: none;
 }
 
 #nav #nav-left,
@@ -95,8 +140,19 @@ body {
     padding: 0;
     margin: 0;
     position: absolute;
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: red solid 3px;
 }
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    #nav-deco,
+    #nav-left,
+    #nav-right {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
 
 #nav #nav-left {
     left: 0;
@@ -107,9 +163,6 @@ body {
     right: 0;
     border-radius: 0 0 10px 50px;
 }
-
-/* Fonts */
-@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
 /* Scrollbar */
 
