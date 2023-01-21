@@ -8,6 +8,13 @@ body {
     padding: 0;
 }
 
+.loadinganimation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 #loader {
     position: fixed;
     width: 350px;
@@ -88,6 +95,7 @@ body {
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500);
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500);
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900);
+
 @font-face {
     font-family: LemonMilk;
     src: url(https://cdn.glitch.global/1f61965e-15d8-4de3-8f2d-15723c6634d9/LemonMilkLight.ttf?v=1662220441168);
@@ -119,8 +127,8 @@ body {
 #nav #nav-deco {
     width: 100vw;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px 10px 0 0;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(128, 0, 128, 0.5), rgba(0, 0, 255, 0.5));
+    /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 #nav #nav-deco h1 {
@@ -136,15 +144,23 @@ body {
 #nav #nav-left,
 #nav #nav-right {
     width: 30vw;
-    height: 90px;
+    height: 60px;
     padding: 0;
     margin: 0;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+#nav #nav-left {
+    border-top: blue solid 3px;
+}
+
+#nav #nav-right {
     border-top: red solid 3px;
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+
     #nav-deco,
     #nav-left,
     #nav-right {

@@ -7,13 +7,15 @@
 </head>
 
 <body>
-    <div id="loaderbg"></div>
-    <div id="loader">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+    <section class="loadinganimation">
+        <div id="loaderbg"></div>
+        <div id="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
     <section id="nav">
         <div id="nav-deco">
             <h1>Exaload</h1>
@@ -29,18 +31,20 @@
             <div id="navr3" class="navblock"></div>
         </nav>
     </section>
-
-    <div id="container">
-        <span id="text1"></span>
-        <span id="text2"></span>
-    </div>
-    <svg id="filters">
-        <defs>
-            <filter id="threshold">
-                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140" />
-            </filter>
-        </defs>
-    </svg>
+    <section class="title">
+        <div id="container">
+            <span id="text1"></span>
+            <span id="text2"></span>
+        </div>
+        <svg id="filters">
+            <defs>
+                <filter id="threshold">
+                    <feColorMatrix in="SourceGraphic" type="matrix"
+                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140" />
+                </filter>
+            </defs>
+        </svg>
+    </section>
     <div class="home-content">
         <h2>eigoboie</h2>
         <h2>eigoboie</h2>
