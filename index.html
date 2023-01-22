@@ -4,10 +4,11 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <section class="loadinganimation">
+    <section id="loadinganimation">
         <div id="loaderbg"></div>
         <div id="loader">
             <span></span>
@@ -20,15 +21,10 @@
         <div id="nav-deco">
             <h1>Exaload</h1>
         </div>
-        <nav id="nav-left">
+        <nav id="nav-bottom">
             <div id="navl1" class="navblock"></div>
             <div id="navl2" class="navblock"></div>
             <div id="navl3" class="navblock"></div>
-        </nav>
-        <nav id="nav-right">
-            <div id="navr1" class="navblock"></div>
-            <div id="navr2" class="navblock"></div>
-            <div id="navr3" class="navblock"></div>
         </nav>
     </section>
     <section class="title">
@@ -46,7 +42,12 @@
         </svg>
     </section>
     <div class="home-content">
-        <h2>eigoboie</h2>
+        <div class="container-icons">
+            <i class="fa fa-apple" id="apple"></i>
+            <i class="fa fa-twitter" id="twitter"></i>
+            <i class="fa fa-github-square github" id="github"></i>
+            <i class="fa fa-facebook-square" id="facebook"></i>
+        </div>
         <h2>eigoboie</h2>
         <h2>eigoboie</h2>
         <h2>eigoboie</h2>
@@ -90,7 +91,9 @@
 
 <footer>
     <script src="loader.js"></script>
+    <script src="navscroll.js"></script>
     <script src="textanimation.js"></script>
+    <script src="orbscanva.js"></script>
 </footer>
 
 </html>

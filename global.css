@@ -8,7 +8,7 @@ body {
     padding: 0;
 }
 
-.loadinganimation {
+#loadinganimation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,19 +116,25 @@ body {
     src: url(https://cdn.glitch.global/1f61965e-15d8-4de3-8f2d-15723c6634d9/GeffryRegular-MV5Jx.ttf?v=1665750040529)
 }
 
+.hidden {
+    display: initial;
+}
 
 #nav {
     position: fixed;
     z-index: 997;
     top: 0;
     color: white;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s ease-out 0s;
 }
 
 #nav #nav-deco {
     width: 100vw;
-    height: 50px;
-    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(128, 0, 128, 0.5), rgba(0, 0, 255, 0.5));
-    /* background-color: rgba(0, 0, 0, 0.2); */
+    height: 80px;
+    /* background: ; */
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #nav #nav-deco h1 {
@@ -139,45 +145,41 @@ body {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
-#nav #nav-left,
-#nav #nav-right {
+#nav #nav-bottom {
     width: 30vw;
     height: 60px;
     padding: 0;
-    margin: 0;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.2);
-}
-
-#nav #nav-left {
-    border-top: blue solid 3px;
-}
-
-#nav #nav-right {
+    transition: all 0.2s ease-out 0s;
     border-top: red solid 3px;
+    border-bottom: blue solid 3px;
+    border-radius: 0 50px;
+    top: 80px;
+}
+
+#nav #nav-bottom:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    border-left: blue solid 3px;
+    border-right: red solid 3px;
+    border-top: none;
+    border-bottom: none;
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
 
     #nav-deco,
-    #nav-left,
-    #nav-right {
+    #nav-bottom {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
     }
-}
-
-
-#nav #nav-left {
-    left: 0;
-    border-radius: 0 0 50px 10px;
-}
-
-#nav #nav-right {
-    right: 0;
-    border-radius: 0 0 10px 50px;
 }
 
 /* Scrollbar */
