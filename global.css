@@ -132,9 +132,10 @@ body {
 
 #nav #nav-deco {
     width: 100vw;
-    height: 80px;
+    height: 120px;
     /* background: ; */
     background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
 }
 
 #nav #nav-deco h1 {
@@ -146,14 +147,42 @@ body {
     text-transform: uppercase;
     user-select: none;
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+
+#nav #nav-deco #nav-deco_left-content h2 {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#nav #nav-deco #nav-deco_right-content h2 {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    user-select: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
 #nav #nav-bottom {
-    width: 30vw;
-    height: 60px;
+    width: 40vw;
+    height: 100px;
     padding: 0;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.2);
@@ -161,16 +190,20 @@ body {
     border-top: red solid 3px;
     border-bottom: blue solid 3px;
     border-radius: 0 50px;
-    top: 80px;
+    top: 120px;
+    box-shadow: 0 1em 2em blue;
 }
 
 #nav #nav-bottom:hover {
     background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
+    border-radius: 10px 10px 30px 30px;
     border-left: blue solid 3px;
     border-right: red solid 3px;
     border-top: none;
     border-bottom: none;
+    z-index: 998;
+    box-shadow: 0 0 3em lightblue;
+    transform: translateY(1em);
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
